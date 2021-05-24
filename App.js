@@ -44,7 +44,7 @@ export default function App () {
     <StatusBar barStyle='light-content' backgroundColor='#0098D3' ></StatusBar>
     <SafeAreaView style={style.safeArea}>
       <View style={style.background}/>
-      <Text style={style.tituloApp}>Formulario Head</Text>
+      <Text style={style.tituloApp}>Simulador de Prestamos</Text>
       <Form
         setCapital={setCapital}
         setInteres={setInteres}
@@ -54,8 +54,8 @@ export default function App () {
 
     <Resultado 
      capital={capital}
-     interest={interes}
-     months={meses}
+     interes={interes}
+     meses={meses}
      total={total}
      errorMessage={errorMessage}></Resultado>
 
@@ -87,7 +87,7 @@ const style = StyleSheet.create({
     fontSize: 25,
     fontWeight: 'bold',
     color:'white',
-    marginTop: 20,
+    marginTop: 40,
   },
 
   

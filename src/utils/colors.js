@@ -1,6 +1,6 @@
 
 
 export default {
-    PRIMARY_COLOR: '#0098D3',
-    PRIMARY_COLOR_DARK: '#006691'
+    PRIMARY_COLOR: '#FC025D',
+    PRIMARY_COLOR_DARK: '#C60505'
 };

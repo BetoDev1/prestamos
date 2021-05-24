@@ -8,14 +8,14 @@ export default function Form(props){
     return(
         <View style={estiloFormu.viewForm}>
             <View style={estiloFormu.viewInputs} >
-                <TextInput placeholder='Cantidad a pedir'
+                <TextInput placeholder='  Monto'
                  keyboardType='numeric' 
                  style={estiloFormu.input}
                  onChange={(e) => setCapital(e.nativeEvent.text)}>
                     
                 </TextInput>
 
-                <TextInput placeholder='Cantidad a pedir' keyboardType='numeric'
+                <TextInput placeholder='  Interes' keyboardType='numeric'
                 style={[estiloFormu.input, estiloFormu.input2] }
                 onChange={(e) => setInteres(e.nativeEvent.text)}></TextInput>
 
@@ -54,18 +54,20 @@ const estiloFormu = StyleSheet.create({
 
     viewInputs: {
         flexDirection: 'row', // pone un input al lado de otro
+        
     },
 
     input: {
         height: 50,
         backgroundColor: 'white',
         borderWidth: 1,
-        borderColor: colors.PRIMARY_COLOR,
-        borderRadius: 5,
+        borderColor: 'grey',
+        borderRadius: 8,
         width: '60%',
         marginRight: 5,
         marginLeft: -5,
         marginBottom: 10,
+        paddingHorizontal: 20,
         },
 
     input2: {
@@ -85,7 +87,7 @@ const estiloPicket = StyleSheet.create({
         color: "black",
         paddingRight: 30,
         backgroundColor: 'white',
-        paddingVertical: 12
+        paddingVertical: 12,
 
 
     },
